@@ -1,0 +1,83 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/james/.nvm/versions/node/v7.7.1/bin/node',
+1 verbose cli   '/home/james/.nvm/versions/node/v7.7.1/bin/npm',
+1 verbose cli   'install' ]
+2 info using npm@4.1.2
+3 info using node@v7.7.1
+4 verbose config Skipping project config: /home/james/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly install normalizeTree
+9 silly loadCurrentTree Finishing
+10 silly loadIdealTree Starting
+11 silly install loadIdealTree
+12 silly cloneCurrentTree Starting
+13 silly install cloneCurrentTreeToIdealTree
+14 silly cloneCurrentTree Finishing
+15 silly loadShrinkwrap Starting
+16 silly install loadShrinkwrap
+17 silly loadShrinkwrap Finishing
+18 silly loadAllDepsIntoIdealTree Starting
+19 silly install loadAllDepsIntoIdealTree
+20 silly loadAllDepsIntoIdealTree Finishing
+21 silly loadIdealTree Finishing
+22 silly currentTree james
+22 silly currentTree └── n@2.1.4
+23 silly idealTree james
+23 silly idealTree └── n@2.1.4
+24 silly generateActionsToTake Starting
+25 silly install generateActionsToTake
+26 silly generateActionsToTake Finishing
+27 silly diffTrees action count 0
+28 silly decomposeActions action count 0
+29 silly runTopLevelLifecycles Starting
+30 silly install runPreinstallTopLevelLifecycles
+31 silly preinstall james
+32 info lifecycle undefined~preinstall: undefined
+33 silly lifecycle undefined~preinstall: no script for preinstall, continuing
+34 silly executeActions Starting
+35 silly install executeActions
+36 silly doSerial global-install 0
+37 silly doParallel fetch 0
+38 verbose correctMkdir /home/james/.npm/_locks correctMkdir not in flight; initializing
+39 verbose lock using /home/james/.npm/_locks/staging-92680f54697e7182.lock for /home/james/node_modules/.staging
+40 verbose unlock done using /home/james/.npm/_locks/staging-92680f54697e7182.lock for /home/james/node_modules/.staging
+41 silly rollbackFailedOptional Starting
+42 silly rollbackFailedOptional Finishing
+43 silly runTopLevelLifecycles Finishing
+44 silly install printInstalled
+45 warn enoent ENOENT: no such file or directory, open '/home/james/package.json'
+46 verbose enoent ENOENT: no such file or directory, open '/home/james/package.json'
+46 verbose enoent This is most likely not a problem with npm itself
+46 verbose enoent and is related to npm not being able to find a file.
+47 warn james No description
+48 verbose If you need help, you may report this error at:
+48 verbose     <https://github.com/npm/npm/issues>
+49 warn james No repository field.
+50 verbose If you need help, you may report this error at:
+50 verbose     <https://github.com/npm/npm/issues>
+51 warn james No README data
+52 verbose If you need help, you may report this error at:
+52 verbose     <https://github.com/npm/npm/issues>
+53 warn james No license field.
+54 verbose If you need help, you may report this error at:
+54 verbose     <https://github.com/npm/npm/issues>
+55 verbose stack Error: EACCES: permission denied, mkdir '/home/james/node_modules/.staging'
+56 verbose cwd /home/james/workspace/c17-node/exercises/dice-roll
+57 error Linux 4.8.0-41-generic
+58 error argv "/home/james/.nvm/versions/node/v7.7.1/bin/node" "/home/james/.nvm/versions/node/v7.7.1/bin/npm" "install"
+59 error node v7.7.1
+60 error npm  v4.1.2
+61 error path /home/james/node_modules/.staging
+62 error code EACCES
+63 error errno -13
+64 error syscall mkdir
+65 error Error: EACCES: permission denied, mkdir '/home/james/node_modules/.staging'
+65 error  { Error: EACCES: permission denied, mkdir '/home/james/node_modules/.staging'
+65 error   errno: -13,
+65 error   code: 'EACCES',
+65 error   syscall: 'mkdir',
+65 error   path: '/home/james/node_modules/.staging' }
+66 error Please try running this command again as root/Administrator.
+67 verbose exit [ -13, true ]

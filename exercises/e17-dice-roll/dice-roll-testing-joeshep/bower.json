@@ -1,0 +1,17 @@
+{
+  "name": "node-diceroll-testing-joeshep",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Joe Shep"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/nss-day-cohort-17/dice-roll-testing-joeshep",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
