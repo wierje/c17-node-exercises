@@ -52,9 +52,26 @@ FROM track t
  INNER JOIN album al WHERE al.albumid = t.albumid
  INNER JOIN artist a WHERE al.artistid = a.artistid
 --14 Provide a query that shows the # of invoices per country. HINT: GROUP BY
+SELECT c.country AS Country, COUNT (*) AS Invoice_Count FROM customer c
+LEFT JOIN invoice ON customer.customerid = invoice.customerid GROUP BY billingcountry
 --15 Provide a query that shows the total number of tracks in each playlist. The Playlist name should be included on the resultant table.
+SELECT pl.name AS Playlist, COUNT (pt.trackid)  AS Tracks FROM playlist pl  
+INNER JOIN playlisttrack pt 
+ON pl.playlistid = pt.playlistid
+GROUP BY pl.playlistid
+
 --16 Provide a query that shows all the Tracks, but displays no IDs. The resultant table should include the Album name, Media type and Genre.
+SELECT t.Name AS TrackName, a.title AS AlbumName, m.name AS Media_Type, g.name AS Genre
+FROM track t 
+LEFT JOIN album a ON a.albumid = t.albumid 
+LEFT JOIN mediatype m ON m.mediatypeid = t.mediatypeid 
+LEFT JOIN genre g ON g.genreid = t.genreid
 --17 Provide a query that shows all Invoices but includes the # of invoice line items.
+SELECT i.invoiceid AS Invoice FROM invoice i, invoicelineid COUNT * AS Lines  
+LEFT JOIN invoiceline il ON il.invoiceid = i.invoiceid
+GROUP BY i.invoiceid
+
+
 --18 Provide a query that shows total sales made by each sales agent.
 --19 Which sales agent made the most in sales in 2009?
 --20 Which sales agent made the most in sales in 2010?

@@ -20,7 +20,7 @@ INSERT INTO ALBUM VALUES(null, 'Turning Stones', '1989', 2864, 'Polydor',
 
 -- 4 Using the INSERT statement, add some songs that are on that album to the Song table.
 INSERT INTO SONG VALUES(null,
- ""Welcome To The Cruise"",
+ 'Welcome To The Cruise',
  285,
  '1989', 
 (SELECT GENREID FROM GENRE WHERE LABEL = 'Rock'),
